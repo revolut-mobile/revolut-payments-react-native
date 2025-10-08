@@ -1,0 +1,8 @@
+pre-commit:
+  parallel: true
+  jobs:
+    - run: yarn eslint {staged_files}
+      glob: '*.{js,ts,jsx,tsx}'
+
+    - run: yarn prettier --check {staged_files}
+      glob: '*.{js,ts,jsx,tsx,json,css,md}'
