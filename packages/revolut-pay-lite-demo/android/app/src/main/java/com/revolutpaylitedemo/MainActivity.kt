@@ -1,5 +1,6 @@
 package com.revolutpaylitedemo
 
+import android.content.Intent
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.fabricEnabled
@@ -27,4 +28,11 @@ class MainActivity : ReactActivity(), RevolutPaymentControllerHolder {
      */
     override val paymentController: RevolutPaymentControllerWrapper =
         RevolutPaymentControllerWrapper(this)
+
+    override fun onNewIntent(intent: Intent?) {
+        super.onNewIntent(intent)
+        intent?.data?.let { uri ->
+            paymentController.handle(uri)
+        }
+    }
 }
