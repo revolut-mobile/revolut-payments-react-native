@@ -4,7 +4,7 @@ import {
   RevolutMerchantCardFormKit,
   RevolutPaymentsSDK,
 } from '@revolut/revolut-merchant-card-form';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   ActivityIndicator,
   Alert,

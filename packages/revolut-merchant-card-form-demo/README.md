@@ -5,10 +5,10 @@
 From an implementation perspective, the SDK works with the following components:
 
 1. **Client-side:** initialise the SDK by providing your Merchant Public API key and selecting the preferred environment to prepare for accepting payments.
-1. **Server-side:** create an order and get `token`, using the [Merchant API: Create an order](https://developer.revolut.com/docs/merchant/create-order) endpoint.
-1. **Client-side:** In your app, configure the SDK and use the `RevolutMerchantCardFormKit` component to handle payments. This component is responsible for presenting the payment UI and returning the final payment outcome to your app via a callback.
-1. **Client-side:** Use the order token to call the `pay` method on the `RevolutMerchantCardFormKit`. This action presents the prebuilt UI, where the customer enters their card details and confirms the payment.
-1. **Endpoint for webhooks:** optionally, you can set up an endpoint which receives webhook events from the Merchant API to track the payment lifecycle. For more information, see: [Use webhooks to keep track of the payment lifecycle](https://developer.revolut.com/docs/merchant/webhooks).
+2. **Server-side:** create an order and get `token`, using the [Merchant API: Create an order](https://developer.revolut.com/docs/merchant/create-order) endpoint.
+3. **Client-side:** In your app, configure the SDK and use the `RevolutMerchantCardFormKit` component to handle payments. This component is responsible for presenting the payment UI and returning the final payment outcome to your app via a callback.
+4. **Client-side:** Use the order token to call the `pay` method on the `RevolutMerchantCardFormKit`. This action presents the prebuilt UI, where the customer enters their card details and confirms the payment.
+5. **Endpoint for webhooks:** optionally, you can set up an endpoint which receives webhook events from the Merchant API to track the payment lifecycle. For more information, see: [Use webhooks to keep track of the payment lifecycle](https://developer.revolut.com/docs/merchant/webhooks).
 
 ## Build and run demo app
 
