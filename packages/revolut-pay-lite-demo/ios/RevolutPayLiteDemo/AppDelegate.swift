@@ -2,6 +2,7 @@ import UIKit
 import React
 import React_RCTAppDelegate
 import ReactAppDependencyProvider
+import RevolutPayLite
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,12 +25,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window = UIWindow(frame: UIScreen.main.bounds)
 
     factory.startReactNative(
-      withModuleName: "RevolutPayLiteDemo",
+      withModuleName: "RevolutPayLiteExample",
       in: window,
       launchOptions: launchOptions
     )
 
     return true
+  }
+
+  func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+    if let url = URLContexts.first?.url {
+      RevolutPayKit.handle(url: url)
+    }
   }
 }
 

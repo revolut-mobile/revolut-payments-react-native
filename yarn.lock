@@ -2327,8 +2327,8 @@ __metadata:
     "@react-native/metro-config": "npm:0.81.4"
     "@react-native/new-app-screen": "npm:0.82.0"
     "@react-native/typescript-config": "npm:0.81.4"
-    "@revolut/revolut-merchant-card-form": "npm:1.0.2"
-    "@revolut/revolut-payments-core": "npm:1.0.2"
+    "@revolut/revolut-merchant-card-form": "npm:1.0.3"
+    "@revolut/revolut-payments-core": "npm:1.0.3"
     react: "npm:19.1.1"
     react-native: "npm:0.82.0"
     react-native-monorepo-config: "npm:^0.1.9"
@@ -2346,8 +2346,8 @@ __metadata:
     "@react-native/metro-config": "npm:0.81.4"
     "@react-native/new-app-screen": "npm:0.82.0"
     "@react-native/typescript-config": "npm:0.81.4"
-    "@revolut/revolut-pay-lite": "npm:1.0.2"
-    "@revolut/revolut-payments-core": "npm:1.0.2"
+    "@revolut/revolut-pay-lite": "npm:1.0.3"
+    "@revolut/revolut-payments-core": "npm:1.0.3"
     react: "npm:19.1.1"
     react-native: "npm:0.82.0"
     react-native-monorepo-config: "npm:^0.1.9"
@@ -2355,48 +2355,48 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@revolut/revolut-merchant-card-form@npm:1.0.2":
-  version: 1.0.2
-  resolution: "@revolut/revolut-merchant-card-form@npm:1.0.2"
+"@revolut/revolut-merchant-card-form@npm:1.0.3":
+  version: 1.0.3
+  resolution: "@revolut/revolut-merchant-card-form@npm:1.0.3"
   dependencies:
-    "@revolut/revolut-payments-core": "npm:^1.0.2"
+    "@revolut/revolut-payments-core": "npm:^1.0.3"
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 10c0/577954847699b1daad9a868ce871425806b8be8bba1d00158afd378dc80aff4b8f2c62ac638123563d108269c2a631bb209d9629edfdfae0fffd6c76ab5a709d
+  checksum: 10c0/5d6c11ded889423668ff5843e05074044b666e2b6b944cee7bc395f63a9421798ceb4c6793c02cc06c0a198c326819747a5247a741f920d748572d837391d36d
   languageName: node
   linkType: hard
 
-"@revolut/revolut-pay-core@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "@revolut/revolut-pay-core@npm:1.0.2"
+"@revolut/revolut-pay-core@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "@revolut/revolut-pay-core@npm:1.0.3"
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 10c0/79e3aae12ef9ad2996b4bd3be8c89929341ff16f02cf8d4b329844028cccdfadd58df89365667647678019b25b113612647d356631ec0e3456b5443e5f34a92a
+  checksum: 10c0/705beb02228b0558510cffd01781fdebc8bb1ee0389dc608e6f52cbebe3cdbd9b46c12a1bb066e956cd0b9aafd5c13c241de473436bb62ed439dd968595c8465
   languageName: node
   linkType: hard
 
-"@revolut/revolut-pay-lite@npm:1.0.2":
-  version: 1.0.2
-  resolution: "@revolut/revolut-pay-lite@npm:1.0.2"
+"@revolut/revolut-pay-lite@npm:1.0.3":
+  version: 1.0.3
+  resolution: "@revolut/revolut-pay-lite@npm:1.0.3"
   dependencies:
-    "@revolut/revolut-pay-core": "npm:^1.0.2"
-    "@revolut/revolut-payments-core": "npm:^1.0.2"
+    "@revolut/revolut-pay-core": "npm:^1.0.3"
+    "@revolut/revolut-payments-core": "npm:^1.0.3"
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 10c0/d559bc4eb37da35ad2681761e8e675c481ebe56588f73b8146c667bdc76ba69ffad1859920b9c73d52f1cb9f70fdc65116f53b1cccc0bda7fb2b4f5547ce1997
+  checksum: 10c0/f70ee5418ebecdf1d628e4e82f900f724a263c2e0fb9f612830ee872611b64825601292951da37c161b12f2791b71973e14523834acfc92ad22b74240ab94ab7
   languageName: node
   linkType: hard
 
-"@revolut/revolut-payments-core@npm:1.0.2, @revolut/revolut-payments-core@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "@revolut/revolut-payments-core@npm:1.0.2"
+"@revolut/revolut-payments-core@npm:1.0.3, @revolut/revolut-payments-core@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "@revolut/revolut-payments-core@npm:1.0.3"
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 10c0/e16e3377fb0247ad4bc70a241239a30700a52d9f3c158645821ab175b59ef5d4c027a496e4dcff9506204b7aacdd0daf6f14a05cd5487639a0be1144a233c991
+  checksum: 10c0/6a926049a51a539751fb7220980ec4ed302774a041553b2a3cce0bb0f999107b66c8561feacd02ae90fac82ec57e7b9faecde6113dc24ab30e3de9590ab421bb
   languageName: node
   linkType: hard
 
