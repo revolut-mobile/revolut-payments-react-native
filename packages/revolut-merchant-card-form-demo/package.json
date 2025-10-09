@@ -1,5 +1,5 @@
 {
-  "name": "revolut-merchant-card-form-demo",
+  "name": "@revolut-payments-react-native/revolut-merchant-card-form-demo",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -9,20 +9,20 @@
     "start": "react-native start"
   },
   "dependencies": {
+    "@react-native/new-app-screen": "0.82.0",
+    "@revolut/revolut-merchant-card-form": "1.0.2",
+    "@revolut/revolut-payments-core": "1.0.2",
     "react": "19.1.1",
     "react-native": "0.82.0",
-    "@react-native/new-app-screen": "0.82.0",
-    "react-native-safe-area-context": "^5.5.2",
-    "@revolut/revolut-payments-core": "1.0.2",
-    "@revolut/revolut-merchant-card-form": "1.0.2"
+    "react-native-safe-area-context": "^5.5.2"
   },
   "devDependencies": {
     "@react-native-community/cli": "20.0.0",
     "@react-native-community/cli-platform-android": "20.0.0",
     "@react-native-community/cli-platform-ios": "20.0.0",
     "@react-native/metro-config": "0.81.4",
-    "react-native-monorepo-config": "^0.1.9",
-    "@react-native/typescript-config": "0.81.4"
+    "@react-native/typescript-config": "0.81.4",
+    "react-native-monorepo-config": "^0.1.9"
   },
   "engines": {
     "node": ">=20"

@@ -20,8 +20,7 @@ import { ErrorMessage } from './ErrorMessage';
 import { getUserFriendlyErrorMessage } from './utils/paymentErrorUtils';
 // https://developer.revolut.com/docs/guides/accept-payments/get-started/test-implementation/test-cards#test-for-successful-payments
 
-const MERCHANT_PUBLIC_KEY =
-  'pk_ygA45FibQ5gWZGYmmmCKv9m7MBMSeIEypkz7JBIx2qADOXsJ';
+const MERCHANT_PUBLIC_KEY = 'MERCHANT_PUBLIC_KEY';
 const ENVIRONMENT = 'sandbox';
 
 export default function App() {
