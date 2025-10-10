@@ -30,7 +30,7 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="payment-return"
+                    android:host="revolut-pay"
                     android:scheme="myapp" />
             </intent-filter>
         </activity>

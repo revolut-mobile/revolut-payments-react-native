@@ -45,7 +45,7 @@ export const RevolutPayButtonSample = () => {
               currency: 'AED',
             },
           }}
-          returnURL={'https://www.google.com'}
+          returnURL={'myapp://revolut-pay'}
           onCreateOrder={handleCreateOrder}
           onCompletion={handleCompletion}
         />
@@ -60,7 +60,7 @@ export const RevolutPayButtonSample = () => {
               currency: 'BGN',
             },
           }}
-          returnURL={'https://www.google.com'}
+          returnURL={'myapp://revolut-pay'}
           onCreateOrder={handleCreateOrder}
           onCompletion={handleCompletion}
         />
@@ -72,7 +72,7 @@ export const RevolutPayButtonSample = () => {
           radius: 'small',
           attachmentStyle: null,
         }}
-        returnURL={'https://www.google.com'}
+        returnURL={'myapp://revolut-pay'}
         onCreateOrder={handleCreateOrder}
         onCompletion={handleCompletion}
       />
@@ -82,7 +82,7 @@ export const RevolutPayButtonSample = () => {
           radius: 'large',
           attachmentStyle: null,
         }}
-        returnURL={'https://www.google.com'}
+        returnURL={'myapp://revolut-pay'}
         onCreateOrder={handleCreateOrder}
         onCompletion={handleCompletion}
       />
@@ -95,13 +95,13 @@ export const RevolutPayButtonSample = () => {
             anyMode: 'light',
           },
         }}
-        returnURL={'https://www.google.com'}
+        returnURL={'myapp://revolut-pay'}
         onCreateOrder={handleCreateOrder}
         onCompletion={handleCompletion}
       />
 
       <RevolutPayButton
-        returnURL={'https://www.google.com'}
+        returnURL={'myapp://revolut-pay'}
         onCreateOrder={handleCreateOrder}
         onCompletion={handleCompletion}
       />
