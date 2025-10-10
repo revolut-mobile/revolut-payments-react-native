@@ -300,7 +300,7 @@ const CheckoutScreen = () => {
             currency: 'GBP',
           },
         }}
-        returnURL={'your-app://payment-return'} // Your app's deep link URL
+        returnURL={'myapp://revolut-pay'} // A deep link is required for the Revolut app to redirect the user back to your app after payment authorisation or abandonment
         onCreateOrder={handleCreateOrder}
         onCompletion={handlePaymentCompletion}
       />
@@ -327,7 +327,7 @@ The `RevolutPayButton` component supports various styling options to match your 
       anyMode: 'light' | 'dark', // Force light or dark theme
     },
   }}
-  returnURL={'your-app://payment-return'}
+  returnURL={'myapp://revolut-pay'}
   onCreateOrder={handleCreateOrder}
   onCompletion={handlePaymentCompletion}
 />
@@ -366,6 +366,15 @@ const handlePaymentCompletion = (event: RevolutPayCompletionEvent) => {
 ### 7. Deep Link Configuration
 
 #### iOS Configuration
+
+To allow your app to open the Revolut retail app, you must declare the revolut URL scheme in your Info.plist file.
+
+```xml
+<key>LSApplicationQueriesSchemes</key>
+<array>
+    <string>revolut</string>
+</array>
+```
 
 When the user is redirected from the Revolut app back to yours, you must pass the incoming URL to the SDK.
 
@@ -407,7 +416,7 @@ You need to declare necessary permissions and app-querying capabilities in your
 #### Step 2: Set up a deep link for redirection
 
 A deep link is required for the Revolut app to redirect the user back to your app after payment
-authorisation.
+authorisation or abandonment.
 
 In your `AndroidManifest.xml`, add an `<intent-filter>` to the activity that will handle the result.
 
@@ -417,7 +426,7 @@ In your `AndroidManifest.xml`, add an `<intent-filter>` to the activity that wil
     <action android:name="android.intent.action.VIEW" />
     <category android:name="android.intent.category.DEFAULT" />
     <category android:name="android.intent.category.BROWSABLE" />
-    <data android:host="payment-return" android:scheme="myapp" />
+    <data android:host="revolut-pay" android:scheme="myapp" />
   </intent-filter>
 </activity>
 ```
