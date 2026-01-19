@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@react-native/new-app-screen": "0.82.0",
-    "@revolut/revolut-merchant-card-form": "1.0.3",
-    "@revolut/revolut-payments-core": "1.0.3",
+    "@revolut/revolut-merchant-card-form": "1.1.1",
+    "@revolut/revolut-payments-core": "1.1.1",
     "react": "19.1.1",
     "react-native": "0.82.0",
     "react-native-safe-area-context": "^5.5.2"

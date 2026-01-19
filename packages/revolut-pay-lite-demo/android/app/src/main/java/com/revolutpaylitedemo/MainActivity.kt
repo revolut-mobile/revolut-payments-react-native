@@ -29,9 +29,9 @@ class MainActivity : ReactActivity(), RevolutPaymentControllerHolder {
     override val paymentController: RevolutPaymentControllerWrapper =
         RevolutPaymentControllerWrapper(this)
 
-    override fun onNewIntent(intent: Intent?) {
+    override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
-        intent?.data?.let { uri ->
+        intent.data?.let { uri ->
             paymentController.handle(uri)
         }
     }
